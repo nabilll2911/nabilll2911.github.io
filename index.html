@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveling Jawa Tengah</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <h1><a href="index.html">Traveling Jateng</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="gallery-menu">
+          <a href="#galeri-wisata">Galeri Wisata</a>
+          <ul class="dropdown-menu">
+            <li><a href="marina.html">Pantai Marina</a></li>
+            <li><a href="celosia.html">Celosia</a></li>
+            <li><a href="umbul.html">Umbul Sidomukti</a></li>
+            <li><a href="saloka.html">saloka</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Banner -->
+<section class="banner">
+  <img src="img/Lawang_sewu_semarang.jpg" alt="Menikmati pesona keindahan Jawa Tengah dalam genggaman">
+</section>
+
+<!-- Tombol Kembali ke atas -->
+<div class="back-to-top-container">
+  <a href="#top" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+</div>
+
+<!-- Kalimat Pembuka -->
+<section class="opening">
+  <div class="container">
+    <p>Ayo temukan keindahan alam dan warisan budaya yang menakjubkan di Galeri Wisata Nabilla.</p>
+  </div>
+</section>
+
+<main>
+  <section id="galeri-wisata">
+    <div class="container">
+      <div class="section-title">
+        <h1>Galeri Wisata</h1>
+        <div class="line"></div>
+      </div>
+      <div class="galeri-wisata">
+        <div class="galeri">
+          <img src="img/fotomarina.jpg" alt="Pantai Marina">
+          <h3>Pantai Marina</h3>
+          <p>harga masuk 10.000</p>
+          <p> Tawangsari, Kota Semarang, Jawa Tengah 50144</p>
+          <a href="marina.html" class="btn btn-more">View Details</a>
+        </div>
+        <div class="galeri">
+          <img src="img/1c7bd61f-0b48-4d30-87a6-40a15e3b229a.jpeg" alt="Celosia">
+          <h3>Celosia</h3>
+          <p>haraga masuk Rp.35000</p>
+          <p>Celosia berlokasi di Jalan Candi Gedong Songo, Beroken, Banyukuning, Bandungan, Kabupaten Semarang, Jawa Tengah</p>
+          <a href="celosia.html" class="btn btn-more">View Details</a>
+        </div>  
+        <div class="galeri">
+          <img src="img/saloka.jpg" alt="Saloka Theme Park">
+          <h3>Saloka Theme Park</h3>
+          <p>harga masuk Rp. Rp120.000 untuk weekdays dan Rp150.000 untuk weekend.</p>
+          <p> Jl. fatmawati no.154, gumuksari, lopait, kec. Tuntang, Semarang, Jawa Tengah 50773, tuntang, semarang, jawa tengah, Indonesia.</p>
+          <a href="saloka.html" class="btn btn-more">View Details</a>
+        <div class="galeri">
+          <img src="img/imagesumbul.jpeg" alt="Umbul Sidomukti">
+          <h3>Umbul Sidomukti</h3>
+          <p>Umbul berlokasi di Umbul Sidomukti, Manggung, Jimbaran, Bandungan, Kabupaten Semarang, Jawa Tengah 50661</p>
+          <a href="umbul.html" class="btn btn-more">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="container">
+  <div class="services">
+    <h1>Our Services</h1>
+  </div>
+  <div class="service-cards">
+    <div class="service-card">
+      <img src="img/lokasi.png" alt="Location Icon">
+      <h2>Location</h2>
+      <p>Memberikan lokasi tempat wisata</p>
+    </div>
+    <div class="service-card">
+      <img src="img/tambah.png" alt="Informasi Icon">
+      <h2>Informasi</h2>
+      <p>Memberikan informasi tempat wisata</p>
+    </div>
+    <div class="service-card">
+      <img src="img/kamera.png" alt="Photo Icon">
+      <h2>Spot Foto</h2>
+      <p>Memberi tahu spot-spot foto</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Bagian Home dengan Informasi Kontak Singkat -->
+<section class="home-section">
+  <div class="container">
+    <h2>Hubungi Kami</h2>
+    <p>Butuh informasi lebih lanjut tentang tempat wisata di Jawa Tengah?</p>
+    <a href="contact.html" class="btn btn-more">hubungi</a>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Nabila. Hak Cipta Dilindungi.</p>
+    <ul class="social-media">
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/nbllafdh_/"><i class="fab fa-instagram"></i></a></li>   
+    </ul>
+  </div>
+</footer>
+
+<!-- Script untuk kembali ke atas -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const backToTopButton = document.querySelector(".back-to-top");
+
+    // Fungsi untuk menangani scroll ke atas
+    function scrollToTop() {
+      // Scroll ke bagian atas halaman dengan animasi smooth
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+
+    // Tambahkan event listener untuk tombol "Kembali ke atas"
+    backToTopButton.addEventListener("click", scrollToTop);
+
+    // Script untuk menu toggle
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeri Celosia, destinasi wisata populer di Bandungan, Jawa Tengah. Temukan informasi mengenai lokasi, sejarah, dan aktivitas yang bisa dilakukan di sini.">
+  <title>Galeri Celosia</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Pastikan file CSS terhubung dengan benar -->
+  <!-- Lightbox CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1><a href="index.html">Traveling Jateng</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="gallery-menu">
+            <a href="#gallery">Galeri Wisata</a>
+            <ul class="dropdown-menu">
+              <li><a href="marina.html">Pantai Marina</a></li>
+              <li><a href="celosia.html">Celosia</a></li>
+              <li><a href="umbul.html">Umbul Sidomukti</a></li>
+              <li><a href="saloka.html">Saloka</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<!-- Banner -->
+<section class="banner">
+  <img src="img/celo10.jpeg" alt="Menikmati pesona keindahan Jawa Tengah dalam genggaman">
+</section>
+  <!-- Konten Utama -->
+  <main id="celosia">
+    <div class="container">
+      <h2>Galeri Celosia</h2>
+      <p>Taman Bunga Celosia di Bandungan, Kabupaten Semarang, adalah taman bunga yang luas, membentang di kaki Gunung Ungaran dengan luas mencapai 8,6 hektare. Taman ini dihiasi dengan ratusan jenis bunga hias yang memperindah setiap sudutnya.
+
+        Spot Foto Menarik
+        Di taman ini, terdapat banyak spot foto yang menarik untuk dikunjungi, antara lain:
+        
+        Gedung Museum Selfie
+        Lorong Wisteria
+        Lorong Tanpa Batas
+        Little Italia, Little Korea
+        Kaktus Raksasa
+        Dermaga Putih
+        White Marine Park
+        Piramida
+        Tebing Celosia
+        Untuk informasi lebih lengkap mengenai daya tarik, harga tiket, lokasi, dan jam buka Taman Bunga Celosia, Anda bisa membaca artikel di Detik Jateng melalui tautan berikut: Taman Bunga Celosia Bandungan.</p>
+      <!-- Konten lainnya -->
+    </div>
+  </main>
+
+  <!-- Galeri gambar -->
+  <div class="container">
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="img/celosia.jpeg" alt="Celosia 1" class="gallery-image">
+      </div>
+      <div class="gallery-item">
+        <img src="img/celosia23.jpg" alt="Celosia 2" class="gallery-image">
+      </div>
+      <div class="gallery-item">
+        <img src="img/images (1).jpeg" alt="Celosia 3" class="gallery-image">
+      </div>
+      <div class="gallery-item">
+        <img src="img/094b46cc-3dd4-41bc-94a3-ad9a582244ac.jpeg" alt="Celosia 4" class="gallery-image">
+      </div>
+      <div class="gallery-item">
+        <img src="img/2a7804d5-8377-41ba-b7a5-c47637689762.jpeg" alt="Celosia 5" class="gallery-image">
+      </div>
+      <div class="gallery-item">
+        <img src="img/celo6.jpeg" alt="Celosia 6" class="gallery-image">
+      </div>
+    </div>
+  </div> <!-- Penutupan container utama -->
+
+  <!-- Modal untuk menampilkan gambar yang diperbesar -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 nabilla. All rights reserved.</p>
+      <ul class="social-media">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/nbllafdh_/"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript untuk menangani pembesaran gambar
+    const modal = document.getElementById("myModal");
+    const img = document.querySelectorAll(".gallery-image");
+    const modalImg = document.getElementById("img01");
+    const closeModal = document.getElementsByClassName("close")[0];
+
+    img.forEach(image => {
+      image.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+    });
+
+    closeModal.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // Menutup modal saat mengklik di luar gambar
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

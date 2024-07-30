@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveling Jawa Tengah</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+<!-- Banner -->
+<section class="banner">
+  <img src="img/2024-07-06.jpg" alt="Menikmati pesona keindahan Jawa Tengah dalam genggaman">
+</section>
+<header>
+  <div class="container">
+    <h1><a href="index.html">Traveling Jateng</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="gallery-menu">
+          <a href="#gallery">Galeri Wisata</a>
+          <ul class="dropdown-menu">
+            <li><a href="marina.html">Pantai Marina</a></li>
+            <li><a href="celosia.html">Celosia</a></li>
+            <li><a href="umbul.html">Umbul Sidomukti</a></li>
+            <li><a href="saloka.html">Saloka Theme Park</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Tombol Kembali ke atas -->
+<div class="back-to-top-container">
+  <a href="#top" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+</div>
+
+<main id="saloka">
+  <div class="container">
+    <h2> galerisaloka</h2>
+   <p> GALERI SALOKA</p>
+    <p>hadir sebagai salah satu destinasi wisata Pesona Indonesia yang berbentuk taman rekreasi tematik keluarga di Jawa Tengah yang mengusung konsep kearifan lokal. Berlokasi di persimpangan antara kota Semarang, Salatiga, Surakarta dan Daerah Istimewa Yogyakarta</p>
+    <!-- Galeri gambar -->
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="img/unnamed.jpg" alt="Umbul Sidomukti" class="gallery-image">
+      </div>
+      <div class="gallery-item">
+        <img src="img/saloka.jpg" alt="Umbul Sidomukti lainnya" class="gallery-image">
+      </div>
+      <div class="gallery-item">
+        <img src="img/saloka2.jpeg" alt="Umbul Sidomukti lainnya" class="gallery-image">
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Modal untuk menampilkan gambar yang diperbesar -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Traveling Jateng. All rights reserved.</p>
+      <ul class="social-media">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/nbllafdh_/"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript untuk menangani pembesaran gambar
+    const modal = document.getElementById("myModal");
+    const img = document.querySelectorAll(".gallery-image");
+    const modalImg = document.getElementById("img01");
+    const closeModal = document.getElementsByClassName("close")[0];
+
+    img.forEach(image => {
+      image.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+    });
+
+    closeModal.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // Menutup modal saat mengklik di luar gambar
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
